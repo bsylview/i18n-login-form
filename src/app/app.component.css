@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0 !important;
+}
+.app-content {
+  padding: 20px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+header{
+  position: fixed;
+  text-align: right;
+  top: 0;
+  center: 0;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  center: 0;
+  width: 100%;
+}

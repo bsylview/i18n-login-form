@@ -1,0 +1,9 @@
+{
+  "APP_TITLE": "Some app text",
+  "LOGIN": "Login",
+  "USER": "User",
+  "PASSWORD": "Password",
+  "USER_VALIDATION_TEXT": "Username is required (minimum 5 characters, maximum 20 characters).",
+  "PASSWORD_VALIDATION_TEXT": "Password is required (Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)",
+  "ROUTES.login": "login"
+}

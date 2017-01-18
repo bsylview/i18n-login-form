@@ -1,0 +1,30 @@
+<div class="container login-page">
+  <div class="row">
+    <div class="col-lg-4 offset-lg-4">
+      <img src="assets/images/login.png" width="128px" class="img-fluid" alt="{{'LOGIN'| translate}}"/>
+      <form [formGroup]="loginForm" role="form">
+        <div class="form-content">
+          <div class="form-group">
+            <label for="name">{{'USER' | translate}}</label>
+            <input autofocus  [(ngModel)]="user.name" type="text" formControlName="name" class="form-control input-underline input-lg" id="name" placeholder="{{'USER' | translate}}">
+            <small [hidden]="loginForm.controls.name.valid || (loginForm.controls.name.pristine && !submitted)" class="text-danger">
+              {{'USER_VALIDATION_TEXT' | translate}}
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">{{'PASSWORD' | translate}}</label>
+            <input [(ngModel)]="user.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" formControlName="password" class="form-control input-underline input-lg" id="password" placeholder="{{'PASSWORD' | translate}}">
+            <small [hidden]="loginForm.controls.password.valid || (loginForm.controls.password.pristine && !submitted)" class="text-danger">
+              {{'PASSWORD_VALIDATION_TEXT' | translate}}
+            </small>
+          </div>
+        </div>
+        <button (click)="onSubmit(loginForm.value, loginForm.valid)" [disabled]="!loginForm.valid" type="submit" class="btn rounded-btn">
+          {{'LOGIN' | translate}}
+        </button>
+      </form>
+    </div>
+  </div>
+  <alert></alert>
+</div>

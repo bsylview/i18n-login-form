@@ -1,0 +1,11 @@
+{
+  "APP_TITLE": "Einige Applikationstext",
+  "LOGIN": "Anmeldung",
+  "USER": "Benutzer",
+  "PASSWORD": "Kennwort",
+  "BACK": "< Zurkuck",
+  "USER_VALIDATION_TEXT": "Benutzer erforderlich (mindestens 5 Zeichen, maximal 20 Zeichen).",
+  "PASSWORD_VALIDATION_TEXT": "Kennwort erforderlich (muss mindestens eine Zahl und einen Groß- und Kleinbuchstaben sowie mindestens 8 Zeichen enthalten)",
+
+  "ROUTES.login": "Anmeldung"
+}
